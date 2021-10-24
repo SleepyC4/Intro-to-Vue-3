@@ -16,9 +16,13 @@
         <div class="product-container">
           <div class="product-image">
             <!-- image goes here -->
+            <!-- v-bind Dynamically bind an attribute to an expression -->
+            <img v-bind:src="image"></img>
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+
+            <a :href="url">A VERY PRETTY PICTURE</a>
           </div>
         </div>
       </div>
